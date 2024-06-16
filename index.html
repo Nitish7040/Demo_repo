@@ -1,16 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            color: blue;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Login page</title>
+                                    <!-- Bootstrp link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="bslogin.css">
+
+
+  <style>
+body{
+    background-image:url(/sign-page/loginproj/deeksha-pahariya-PKJLZul_bUg-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+
+    width: 80%;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+ 
+
+.email{
+    /* border: 5px solid green; */
+    display:flex;
+}
+.password{
+    /* border: 5px solid yellow; */
+    display:flex;
+}
+
+.remember{
+    /* border: 5px solid black; */
+    display:flex;     
+}
+.signin{
+     /* border: 5px solid red; */
+    display:flex;
+    width: 91%; 
+    position: relative;
+    top: -34px;
+    left: -6px;
+
+    
+}
+.loginform{
+    /* border: 5px solid rgb(0, 17, 255); */
+   background-color:rgba(137, 47, 222, 0.25);
+   
+   width: 30%;
+   height: auto;
+   margin: 7% auto;
+   padding: 25px 10px;
+   box-shadow: 15px 10px 20px rgb(57, 83, 210);
+   position: fixed;
+   top:50px ;
+   right: 200px;
+   
+}
+.form-control{
+    /* border: 5px solid black; */
+    margin: 10px 23px;
+    width: 130%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background: transparent;
+    position: relative;
+    top: 6px;
+    left: 40px;
+}
+
+
+#forgetpass{
+    border: 5px solid aqua;
+    display: inline;
+    position: relative;
+    left: 100px;
+    top: 190px;
+    right: 120px;
+}
+
+
+
+
+
+
+  </style>
+
 </head>
+
 <body>
-    <h1>Hii all i am nitish</h1>
+                             <!-- Login form start -->
+    <div class="loginform">
+      <form>
+
+    <h2 class="text-center text-primary mt-2 mb-4 white">Instagram</h2>
+                             <!-- Email part -->
+    <div class="email">
+    <div class="row mb-3">
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Enter email">
+      </div>
+    </div>
+  </div>
+
+                            <!-- password part -->
+<div class="password">
+    <div class="row mb-3">
+      <div class="col-sm-10">
+        <input type="password" class="form-control password3" id="inputPassword3"placeholder="Enter password">
+      </div>
+    </div>
+  </div>
+
+                             <!-- cheak box -->
+
+    <div class="remember">
+      <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+          <div class="form-check">
+             <label class="form-check-label" for="gridCheck1">
+                           <!-- Remember me  -->
+            </label> 
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+                              <!-- sign in -->
+    <div class="signin">
+      <div class="d-grid gap-2 col-8 mx-auto">
+        <button class="btn btn-primary" type="button">sign in</button>
+
+      </div>
+
+    </div>
+  </form>
+</div>
+
+
+
 </body>
+
 </html>
